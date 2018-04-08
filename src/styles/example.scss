@@ -1,0 +1,160 @@
+html,
+body {
+  height: 100%;
+}
+
+.playlist {
+  ul {
+    // height: 100vh;
+    border: 1px solid red;
+    background-color: #e8e8e9;
+    display: flex;
+    // justify-content: center;
+
+    flex-flow: column nowrap; /* flex-direction flex-wrap */
+    // flex-flow: row nowrap; /* flex-direction flex-wrap */
+    // justify-content: space-around;
+    // align-items: center;
+    // align-content: stretch;
+  }
+  // Align-content /* The align-content property aligns the items in the multi-line container to the start of the cross-axis. */
+  // center
+  // flex-end
+  // flex-start
+  // space-around
+  // space-between
+  // stretch /* default */
+
+  li {
+    // height: 100px;
+    // width: 100px;
+
+    background-color: #8cacea;
+    margin: 8px;
+    padding: 4px;
+    // flex-grow: 0 0 auto;
+    flex: 0 0 auto;
+    border: 1px solid goldenrod;
+    // flex-basis: 250px;
+  }
+
+  /*select first li element within the ul */
+  li:nth-child(1) {
+    // When you use the auto-margin alignment on a flex-item, the justify-content property no longer works.
+    // margin-left: auto;
+    // margin-right: auto;
+    // order: 1;
+    // flex-grow: 0;
+    // align-self: auto;
+    // align-self: baseline;
+    // align-self: center;
+    // align-self: flex-end;
+    // align-self: flex-start;
+    // align-self: stretch;
+  }
+  li:nth-child(2) {
+    // order: 1;
+    // flex-grow: 1;
+  }
+  li:nth-child(3) {
+    // order: 1;
+    // flex-grow: 2;
+  }
+  li:nth-child(4) {
+    // order: 1;
+    // flex-grow: 3;
+  }
+}
+
+// The Flex Container Properties
+// Flex-direction
+// row /* default */
+// row-reverse
+// column
+// column-reverse
+
+// Flex-wrap
+// nowrap /* default */
+// wrap
+// wrap-reverse
+
+// Flex-flow /* flex-direction and flex-wrap values */
+// row nowrap /* default */
+// row
+// row-reverse
+// column
+// column-reverse
+// nowrap
+// wrap
+// wrap-reverse
+
+// Justify-content /* defines how flex items are laid out on the main-axis. */
+// flex-start /* default */
+// flex-end
+// center
+// space-around
+// space-between
+
+// Align-items /* defines how flex items are laid out on the cross-axis. */
+// baseline
+// center
+// flex-end
+// flex-start
+// stretch /* default */
+
+// Align-content /* The align-content property aligns the items in the multi-line container to the start of the cross-axis. */
+// center
+// flex-end
+// flex-start
+// space-around
+// space-between
+// stretch /* default */
+
+// The Flex item properties
+// Alignment properties on flex-items
+// order /* The order property allows for reordering the flex items within a container. */
+
+// Flex-grow and flex-shrink
+// flex: default;  0 1 auto;
+// flex: auto; 1 1 auto; "compute initial width automatically, but grow to fit the entire available space and shrink if necessary"
+// intial
+// none
+
+// The beauty of flex items is being “flexible.”
+
+// flex: flex-grow flex-shrink flex-basis; GSB
+// flex-grow
+// default set to 0 which means grow is turned off
+
+// flex-shrink
+// default set to 1 which means shrink is turned on
+
+// flex-basis
+// specifies the initial size of a flex-item
+// flex-basis: auto /* default */
+// percentages || ems || rems || pixels same as width prop
+
+// The flex shorthand allows you set the flex-grow, flex-shrink and flex-basis properties all at once.
+
+// setting flex-grow and flex-shrink values is absolute flex
+// only flex-basis is relative flex
+//
+// /*this is an absolute flex item*/
+// li {
+//   flex: 1 1; /*flex-basis defaults to 0*/
+// }
+// /*this is a relative flex item*/
+// li {
+//   flex-basis: 200px; /*only flex-basis is set*/
+// }
+
+// align-self
+// auto
+// baseline
+// center
+// flex-end
+// flex-start
+// stretch
+
+// What really is the difference between an absolute and relative flex-item?
+// The spacing within a relative flex item is computed based on it’s content size. In an absolute flex item, it is based solely on “flex”, not content.

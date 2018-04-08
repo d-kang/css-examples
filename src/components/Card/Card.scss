@@ -1,0 +1,61 @@
+/*
+ = ======== flexbox ========
+*/
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 250px;
+}
+
+/*
+ = ====== visuals =========
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  min-height: 100vh;
+}
+
+.card {
+  margin: 12px;
+  background: #f2f2f2;
+  border-radius: 7px;
+  padding: 0 0 5px 0;
+
+  > header {
+    background: #808080;
+    height: 200px;
+    border-radius: 7px 7px 0 0;
+  }
+
+  > ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      height: 20px;
+      width: 90%;
+      margin: 10px auto;
+      background: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  button {
+    width: 50%;
+    height: 40px;
+    border: 0;
+    margin-left: 12px;
+    border-radius: 7px;
+  }
+}
+.card--big {
+  transform: scaleX(1.12);
+}
