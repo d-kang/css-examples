@@ -1,0 +1,28 @@
+div.movie {
+  width: 100%;
+  padding: 20px 20px 20px 190px;
+  color: #fff;
+  box-sizing: border-box;
+
+  // background-image: url('http://i.imgur.com/2tiJEnP.png');
+  // background-position: 0% 0%;
+  // background-size: cover;
+  background: url('http://i.imgur.com/lcm5byq.png') 20px 20px/150px 218px
+      no-repeat,
+    url('http://i.imgur.com/2tiJEnP.png') 0% 0% / cover;
+}
+
+.movie p {
+  font-size: 1.5em;
+}
+
+.movie button {
+  display: block;
+  color: #fff;
+  font-size: 0.7em;
+  padding: 13px;
+  background-color: #f44336;
+  margin-top: 40px;
+  border: 0;
+  border-radius: 2px;
+}
