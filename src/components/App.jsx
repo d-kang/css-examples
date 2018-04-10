@@ -3,6 +3,8 @@ import NavBar from './NavBar';
 import Card from './Card';
 import Challenge1 from './Challenge1';
 import AddToCart from './AddToCart';
+import Signup from './Signup';
+import Phone from './Phone';
 
 class App extends PureComponent {
   render() {
@@ -11,7 +13,9 @@ class App extends PureComponent {
         {/* <NavBar /> */}
         {/* <Card /> */}
         {/* <Challenge1 /> */}
-        <AddToCart />
+        {/* <AddToCart /> */}
+        {/* <Signup /> */}
+        <Phone />
       </div>
     );
   }
