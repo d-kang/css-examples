@@ -6,6 +6,7 @@ import AddToCart from './AddToCart';
 import Signup from './Signup';
 import Phone from './Phone';
 import ColorVariables from './ColorVariables';
+import ThemedSite from './ThemedSite';
 
 class App extends PureComponent {
   render() {
@@ -17,7 +18,8 @@ class App extends PureComponent {
         {/* <AddToCart /> */}
         {/* <Signup /> */}
         {/* <Phone /> */}
-        <ColorVariables />
+        {/* <ColorVariables /> */}
+        <ThemedSite />
       </div>
     );
   }
