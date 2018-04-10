@@ -7,6 +7,7 @@ import Signup from './Signup';
 import Phone from './Phone';
 import ColorVariables from './ColorVariables';
 import ThemedSite from './ThemedSite';
+import VariableBooth from './VariableBooth';
 
 class App extends PureComponent {
   render() {
@@ -19,7 +20,8 @@ class App extends PureComponent {
         {/* <Signup /> */}
         {/* <Phone /> */}
         {/* <ColorVariables /> */}
-        <ThemedSite />
+        {/* <ThemedSite /> */}
+        <VariableBooth />
       </div>
     );
   }
