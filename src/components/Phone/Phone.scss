@@ -1,16 +1,14 @@
-:root {
-  --primary-bg: rgba(44, 62, 80, 1);
-  --secondary-bg: rgba(0, 0, 0, 0.9);
-}
+$primary-bg: rgba(44, 62, 80, 1);
+$secondary-bg: rgba(0, 0, 0, 0.9);
 
-body {
+.phone__container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh; /* body element take the entire height of the user’s viewport with 100vh */
   margin: 0;
   font-family: serif;
-  background: var(--secondary-bg);
+  background: $secondary-bg;
 }
 
 .phone-body {
@@ -30,7 +28,7 @@ body {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--primary-bg);
+    background: $primary-bg;
     top: 12px;
   }
   &:after {
@@ -42,7 +40,7 @@ body {
 }
 
 .phone-inner {
-  background: var(--primary-bg);
+  background: $primary-bg;
   height: 80%;
   width: 90%;
   display: flex;
@@ -72,6 +70,6 @@ body {
     height: 7px;
     top: -40px;
     border-radius: 5px;
-    background: var(--primary-bg);
+    background: $primary-bg;
   }
 }

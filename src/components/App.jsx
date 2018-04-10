@@ -5,6 +5,7 @@ import Challenge1 from './Challenge1';
 import AddToCart from './AddToCart';
 import Signup from './Signup';
 import Phone from './Phone';
+import ColorVariables from './ColorVariables';
 
 class App extends PureComponent {
   render() {
@@ -15,7 +16,8 @@ class App extends PureComponent {
         {/* <Challenge1 /> */}
         {/* <AddToCart /> */}
         {/* <Signup /> */}
-        <Phone />
+        {/* <Phone /> */}
+        <ColorVariables />
       </div>
     );
   }
